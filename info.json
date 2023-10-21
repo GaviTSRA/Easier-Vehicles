@@ -1,0 +1,10 @@
+{
+    "name": "easier-vehicles",
+    "version": "1.0.0",
+    "title": "Easier Vehicles",
+    "author": "GaviTRA",
+    "contact": "gavitsra@gmail.com",
+    "factorio_version": "1.1.91",
+    "dependencies": ["base >= 1.1.91"],
+    "description": "When placing any vehicle that requires fuel (ie car or tank), you will automatically enter it and place the best available fuel in your inventory into it. This mod also adds a custom keybind that allows you to leave and mine a vehicle instantly. This mod should work with modded vehicles and fuels."
+}
