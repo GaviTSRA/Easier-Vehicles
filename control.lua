@@ -7,9 +7,6 @@ script.on_event(defines.events.on_built_entity, function(e)
       ["spider-vehicle"] = true,
    }
 
-   game.print(e.created_entity.type)
-
-
    if not player.driving and VEHICLE_TYPES[e.created_entity.type] then
       e.created_entity.set_driver(player)
    end
