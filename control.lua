@@ -8,7 +8,9 @@ script.on_event(defines.events.on_built_entity, function(e)
    }
 
    if not player.driving and VEHICLE_TYPES[e.created_entity.type] then
-      e.created_entity.set_driver(player)
+      if settings.get_player_settings(e.player_index)["auto-enter"].value then
+         e.created_entity.set_driver(player)
+      end
    end
 end)
 
